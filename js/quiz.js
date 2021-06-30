@@ -11,8 +11,9 @@ function scrollDown() {
     const vheight = $(".question_container").height();
     $("html, body").animate({
         scrollTop: ((Math.floor($(window).scrollTop() / vheight) + 1) * vheight)
-    }, 500);
+    }, 300);
     cnt++;
+    console.log(cnt);
 }
 
 function move_next() {
@@ -29,6 +30,13 @@ function move_next() {
 }
 
 for (let i = 0; i < buttons.length; i++) {
+    if (i == buttons.length - 1) {
+        buttons[i].addEventListener("click", function () {
+            let addr = "quiz1_end.html?index=" + correct;
+            window.location.href = addr;
+        });
+        continue;
+    }
     buttons[i].addEventListener("click", move_next);
 }
 
