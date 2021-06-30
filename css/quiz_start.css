@@ -6,13 +6,19 @@
     font-style: normal;
   }
   
-  @font-face {
+@font-face {
     font-family: "IBMPlexSansKR-Text";
     src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Text.woff")
       format("woff");
     font-weight: normal;
     font-style: normal;
   }
+
+
+.main
+{
+    padding: 5px;
+}
 
 html {
     width: 100%;
@@ -32,7 +38,7 @@ body {
     justify-content: center;
     width: 100%;
 
-    margin-top: 30px;
+    margin-top: 100px;
 }
 
 #main_contents .wrapper {
@@ -48,16 +54,28 @@ body {
 .title {
     text-align: center;
     padding-bottom: 50px;
+    padding-top: 100px;
 }
+
 
 .main_title {
     font-family: "IBMPlexSansKR-Bold";
     font-size: 50px;
-    padding-bottom: 15px;
+    padding-bottom: 70px;
+    padding-left: 10px;
 }
+
+.sub_title{
+    font-family: "IBMPlexSansKR-Bold";
+    font-size: 35px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+
 
 .button {
     text-align: center;
+    
     padding-bottom: 50px;
 }
 
