@@ -13,7 +13,6 @@ function scrollDown() {
         scrollTop: ((Math.floor($(window).scrollTop() / vheight) + 1) * vheight)
     }, 300);
     cnt++;
-    console.log(cnt);
 }
 
 function move_next() {

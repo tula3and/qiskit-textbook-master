@@ -4,14 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Congrats!</title>
+    <link rel="stylesheet" type="text/css" href="css/quiz_end.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  </head>
+  <body>
+    <section id="main_contents">      
+            <div class="wrapper">
+                <div class="title">
+                    <h3 class="main_title">This Quiz is related to the link below</h3>  
+                    <div id="score"></div>
+                    <div>
+                      <br><br>
+                        <hr width = "80%" color = "#514E52">
+                    </div>
+                    <div>
+                      <br><br>
+                    </div>
+                    <div class="button">
+                        <a href="quiz1.html">
+                            <button class="go_quiz" type="button">Play again!</button>   
+                        </a>
+                        <a href="index.html">
+                            <button class="no_quiz" type="button">Return to the main</button>   
+                        </a>
+                    </div>
+
+
+                    
+                </div>
+    
+    </section>
     <script type="text/javascript">
       $(document).ready(function () {
         let val = location.href.substr(location.href.lastIndexOf("=") + 1);
-        console.log("val : " + val);
+        let element = document.getElementById("score");
+        element.innerText = val + "/10";
       });
     </script>
-  </head>
-  <body></body>
+</body>
 </html>
