@@ -31,8 +31,21 @@ function move_next() {
 for (let i = 0; i < buttons.length; i++) {
     if (i == buttons.length - 1) {
         buttons[i].addEventListener("click", function () {
-            let addr = "quiz1_end.html?index=" + correct;
-            window.location.href = addr;
+            let inputs = answers[cnt].getElementsByTagName("input");
+            let isChecked = false;
+            for (let i = 0; i < inputs.length; i++) {
+                if (inputs[i].checked) {
+                    isChecked = true;
+                    if (inputs[i].className === "correct") correct++;
+                }
+            }
+            if (!isChecked) {
+                alert("Not checked!");
+            }
+            else {
+                let addr = "quiz1_end.html?index=" + correct;
+                window.location.href = addr;
+            }
         });
         continue;
     }
