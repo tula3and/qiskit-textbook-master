@@ -65,14 +65,11 @@ body {
 .sub_title {
   font-family: "IBMPlexSansKR-Bold";
   font-size: 35px;
-  padding-bottom: 30px;
   padding-left: 10px;
 }
 
 .button {
   text-align: center;
-
-  padding-bottom: 50px;
 }
 
 .button button {
