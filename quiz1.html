@@ -7,30 +7,34 @@
     <title>Chapter 1 Quiz</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/quiz.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   </head>
   <body>
     <section>
       <div>
         <div class="question_container">
           <div class="number">1/10</div>
-          <div class="question">hello?</div>
+          <div class="question">What does 11011 mean in binary?</div>
           <div class="answer">
             <div>
               <input type="radio" name="answer1" id="a11" />
-              <label for="a11">hello</label>
+              <label for="a11">23</label>
             </div>
             <div>
               <input type="radio" name="answer1" id="a12" />
-              <label for="a12">hello</label>
+              <label for="a12">25</label>
             </div>
             <div>
-              <input type="radio" name="answer1" id="a13" />
-              <label for="a13">hello</label>
+              <input class="correct" type="radio" name="answer1" id="a13" />
+              <label for="a13">27</label>
             </div>
             <div>
               <input type="radio" name="answer1" id="a14" />
-              <label for="a14">hello</label>
+              <label for="a14">29</label>
             </div>
+          </div>
+          <div class="button">
+            <button>NEXT</button>
           </div>
         </div>
         <div class="question_container">
@@ -54,6 +58,9 @@
               <label for="a24">hello</label>
             </div>
           </div>
+          <div class="button">
+            <button>NEXT</button>
+          </div>
         </div>
         <div class="question_container">
           <div class="number">3/10</div>
@@ -75,6 +82,9 @@
               <input type="radio" name="answer3" id="a34" />
               <label for="a34">hello</label>
             </div>
+          </div>
+          <div class="button">
+            <button>NEXT</button>
           </div>
         </div>
         <div class="question_container">
@@ -98,8 +108,12 @@
               <label for="a44">hello</label>
             </div>
           </div>
+          <div class="button">
+            <button>NEXT</button>
+          </div>
         </div>
       </div>
     </section>
   </body>
+  <script type="text/javascript" src="js/quiz.js"></script>
 </html>
