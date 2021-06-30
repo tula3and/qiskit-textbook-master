@@ -10,7 +10,7 @@ let correct = 0;
 function scrollDown() {
     const vheight = $(".question_container").height();
     $("html, body").animate({
-        scrollTop: (cnt + 1) * vheight
+        scrollTop: (cnt + 2) * vheight
     }, 300);
     cnt++;
 }
